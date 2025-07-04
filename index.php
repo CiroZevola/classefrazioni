@@ -14,13 +14,13 @@ require_once __DIR__ . "/inc/Fraction_Class.php";
     <form method="POST" action="">
         <fieldset>
             <legend>Frazione 1</legend>
-            <label>Numeratore: <input type="number" name="num1" required value="<?php echo isset($_POST['num1']) ? htmlspecialchars($_POST['num1']) : 1; ?>"></label>
-            <label>Denominatore: <input type="number" name="den1" required value="<?php echo isset($_POST['den1']) ? htmlspecialchars($_POST['den1']) : 3; ?>"></label>
+            <label>Numeratore: <input type="number" name="num1" required value="<?php echo isset($_POST['num1']) ? htmlspecialchars($_POST['num1']) : ''; ?>"></label>
+            <label>Denominatore: <input type="number" name="den1" required value="<?php echo isset($_POST['den1']) ? htmlspecialchars($_POST['den1']) : ''; ?>"></label>
         </fieldset>
         <fieldset>
             <legend>Frazione 2</legend>
-            <label>Numeratore: <input type="number" name="num2" required value="<?php echo isset($_POST['num2']) ? htmlspecialchars($_POST['num2']) : 1; ?>"></label>
-            <label>Denominatore: <input type="number" name="den2" required value="<?php echo isset($_POST['den2']) ? htmlspecialchars($_POST['den2']) : 6; ?>"></label>
+            <label>Numeratore: <input type="number" name="num2" required value="<?php echo isset($_POST['num2']) ? htmlspecialchars($_POST['num2']) : ''; ?>"></label>
+            <label>Denominatore: <input type="number" name="den2" required value="<?php echo isset($_POST['den2']) ? htmlspecialchars($_POST['den2']) : ''; ?>"></label>
         </fieldset>
         <button type="submit">Calcola</button>
     </form>
