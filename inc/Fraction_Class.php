@@ -39,7 +39,7 @@ class Fraction {
         return $this->numerator . "/" . $this->denominator;
     }
 
-    public function AddOrSubtract(Fraction $s, int $sign=1) :Fraction{
+    public function AddOrSubtract(Fraction $s, int $sign) :Fraction{
         $newNumerator = $this->numerator * $s->denominator + $sign*($this->denominator * $s->numerator); 
         $newDenominator = $this->denominator * $s->denominator;
         return new Fraction($newNumerator,$newDenominator);
