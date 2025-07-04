@@ -59,18 +59,5 @@ class Fraction {
         $newDenominator = $this->denominator * $b->numerator;
         return new Fraction($newNumerator, $newDenominator);
     }
-}
-
-$fraction1 = new Fraction( 1 , 3 );
-$fraction2 = new Fraction( 1 , 6 );
-$sum = $fraction1->AddOrSubtract($fraction2,+1);
-$substract = $fraction1->AddOrSubtract($fraction2,-1);
-$product = $fraction1->Product($fraction2);
-$division = $fraction1->division($fraction2);
-echo "Fraction: " . $fraction1->getFraction() . "<br>"; 
-echo "Fraction: " . $fraction2->getFraction() . "<br>"; 
-echo "Sum: " . $sum->getFraction() . "<br>"; 
-echo "Substaction: " . $substract->getFraction() . "<br>"; 
-echo "Product: " . $product->getFraction() . "<br>"; 
-echo "division: " . $division->getFraction() . "<br>"; 
+};
 ?>
